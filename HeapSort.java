@@ -8,9 +8,9 @@ public class HeapSort {
 		int left = (i << 1) + 1;
 		int right = (i << 1) + 2;
 		int largest = i;
-		if(left<size && a[left]<=a[largest])
+		if(left<size && a[left]>a[largest])
 			largest = left;
-		if(right<size && a[right]<=a[largest])
+		if(right<size && a[right]>a[largest])
 			largest = right;
 		if(largest!=i){
 			swap(a, largest, i);
